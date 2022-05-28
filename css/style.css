@@ -1,5 +1,55 @@
 /* GLOBAL */
 
+:root {
+  --main-bg: #fff;
+  --body-bg: #f2f2f2;
+  --text-color: #111517;
+}
+
+.dark-mode {
+  --main-bg: #2b3844;
+  --body-bg: #202c36;
+  --text-color: #fff;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -9,22 +59,26 @@ html {
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
+}
+
+*:focus {
+  outline: 2px dashed var(--text-color);
+  outline-offset: 3px;
 }
 
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  font-family: "Nunito Sans", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 a {
@@ -39,11 +93,13 @@ img {
   display: block;
 }
 
-a, span, button {
+a,
+span,
+button {
   display: inline-block;
 }
 
-button{
+button {
   border: none;
   background: none;
   cursor: pointer;
@@ -53,7 +109,7 @@ button{
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1380px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
@@ -64,16 +120,152 @@ button{
 
 .main-content {
   flex-grow: 1;
+  padding-top: 45px;
 }
 
+/* HEADER */
+
+.site-header {
+  background-color: var(--main-bg);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-logo-link {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+
+.dark-mode-btn {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+
+.moon-icon {
+  margin-right: 10px;
+  width: 15px;
+  height: 14px;
+  display: inline-block;
+}
+
+/* FORM */
+
+.main-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.main-input {
+  padding: 18px;
+  background: var(--main-bg);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  border: 0;
+  color: var(--text-color);
+  min-width: 480px;
+  padding-left: 74px;
+  background-image: url('../img/icon-search-black.svg');
+  background-repeat: no-repeat;
+  background-position: 32px center;
+}
+
+.main-select {
+  border: 0;
+  padding: 18px;
+  background: var(--main-bg);
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  min-width: 200px;
+  color: var(--text-color);
+  display: inline-block;
+}
+
+.main-select-option {
+  width: 100%;
+}
+
+/* MAIN CARDS */
+
+.main-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -75px;
+}
+
+.card {
+  width: calc(100% / 4 - 75px);
+  margin-left: 75px;
+  margin-bottom: 75px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+}
+
+.card-info {
+  padding: 24px;
+  background-color: var(--main-bg);
+  flex-grow: 1;
+}
+
+.card-title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.card-about-list {
+  padding: 0;
+}
+
+.card-about-item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--text-color);
+}
+
+.card-about-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.bold {
+  font-weight: 600;
+}
 /* RETINA BG */
 
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
 }

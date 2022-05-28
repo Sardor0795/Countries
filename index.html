@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,137 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <header class="site-header">
+        <div class="container header-container">
+            <h1 class="site-logo"><a href="#" class="site-logo-link">Where in the world?</a></h1>
+
+            <button class="dark-mode-btn"><svg class="moon-icon" width="18" height="17" viewBox="0 0 18 17"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.5532 11.815C8.66857 11.815 5.51929 8.92783 5.51929 5.36821C5.51929 4.0253 5.96679 2.78158 6.73143 1.75C3.69036 2.69515 1.5 5.33122 1.5 8.43807C1.5 12.3385 4.94929 15.5 9.20357 15.5C12.5929 15.5 15.4696 13.4932 16.5 10.7045C15.375 11.4048 14.0161 11.815 12.5532 11.815Z"
+                        fill="#fff" stroke="currentColor" stroke-width="1.25" />
+                </svg>
+                Dark Mode</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <form class="main-form">
+                <input type="text" class="main-input" placeholder="Search for a country…">
+                <select class="main-select">
+                    <option class="main-select-option" value="Filter by Region">Filter by Region</option>
+                    <option class="main-select-option" value="Africa">Africa</option>
+                    <option class="main-select-option" value="Africa">Africa</option>
+                    <option class="main-select-option" value="Africa">Africa</option>
+                </select>
+            </form>
+            <div class="main-cards">
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/flag-germany.jpg" alt="flaf germany"
+                        srcset="./img/flag-germany.jpg 1x, ./img/flag-germany@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Germany</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>81,770,900</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Europe</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Berlin</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/flag-usa.jpg" alt="flaf usa"
+                        srcset="./img/flag-usa.jpg 1x, ./img/flag-usa@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">United States of America</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>323,947,000</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Americas</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Washington, D.C.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/flag-brazil.jpg" alt="flaf germany"
+                        srcset="./img/flag-brazil.jpg 1x, ./img/flag-brazil@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Brazil</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>206,135,893</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Americas</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Brasília</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/UK.jpg" alt="flaf germany"
+                        srcset="./img/UK.jpg 1x, ./img/UK@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Iceland</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>334,300</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Europe</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Reykjavík</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/Afghanistan.jpg" alt="flaf germany"
+                        srcset="./img/Afghanistan.jpg 1x, ./img/Afghanistan@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Afghanistan</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>27,657,145</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Asia</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Kabul</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/Åland-Islands.jpg" alt="flaf germany"
+                        srcset="./img/Åland-Islands.jpg 1x, ./img/Åland-Islands@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Åland Islands</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>28,875</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Europe</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Mariehamn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/Albania.jpg" alt="flaf germany"
+                        srcset="./img/Albania.jpg 1x, ./img/Albania@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Albania</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>2,886,026</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Europe</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Tirana</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" width="276" height="160" src="./img/Algeria.jpg" alt="flaf germany"
+                        srcset="./img/Algeria.jpg 1x, ./img/Algeria@2x.jpg 2x">
+                    <div class="card-info">
+                        <h3 class="card-title">Algeria</h3>
+                        <ul class="card-about-list">
+                            <li class="card-about-item"><span class="bold">Population:</span>40,400,000</li>
+                            <li class="card-about-item"><span class="bold">Region:</span>Africa</li>
+                            <li class="card-about-item"><span class="bold">Capital:</span>Algiers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <script src="js/main.js"></script>
+
 </body>
+
 </html>
