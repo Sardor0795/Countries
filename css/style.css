@@ -78,7 +78,7 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 a {
@@ -184,7 +184,7 @@ button {
   color: var(--text-color);
   min-width: 480px;
   padding-left: 74px;
-  background-image: url('../img/icon-search-black.svg');
+  background-image: url("../img/icon-search-black.svg");
   background-repeat: no-repeat;
   background-position: 32px center;
 }
