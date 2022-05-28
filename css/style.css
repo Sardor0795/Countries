@@ -260,6 +260,7 @@ button {
 .bold {
   font-weight: 600;
 }
+
 /* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
