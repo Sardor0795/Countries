@@ -15,10 +15,8 @@
   border: 0;
   color: var(--text-color);
   min-width: 480px;
+  padding-right: 32px;
   padding-left: 74px;
-  background-image: url("../img/icon-search-black.svg");
-  background-repeat: no-repeat;
-  background-position: 32px center;
 }
 
 .main-select {
@@ -34,6 +32,19 @@
 
 .main-select-option {
   width: 100%;
+}
+
+.search-input-wrapper {
+  position: relative;
+}
+
+.search-img {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-color);
 }
 
 /* MAIN CARDS */
